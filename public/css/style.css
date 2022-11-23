@@ -1,0 +1,67 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;700&display=swap');
+
+
+body{
+    background-color: #ECEDEA;
+    height: 100vh;
+}
+
+.brandName {
+    color:#354B27;
+    font-size: 32px;
+    font-family: 'Libre Bodoni', serif;
+}
+
+
+.myBtn {
+    color:#354B27;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', serif;
+    margin-right: 16px;
+}
+
+.cta {
+    border: 2px solid #48284A;
+    border-radius: 20px;
+    padding: 8px 40px; 
+}
+
+.myBtn:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.myMain {
+    width: 100%;
+    height: 350px;
+    font-family: 'Libre Bodoni', serif;
+    color: #354B27;
+    background-image: url(http://localhost:3000/assets/img/librosycafe.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center right;
+}
+
+.myMain h1{
+    width: 90%;
+    font-size: 48px;
+}
+
+.myMain p {
+    width:60%;
+    padding-top: 8px;
+    font-size: 24px;
+}
+
+
+footer {
+    background-color: #354B27;
+    color: #ECEDEA;
+    font-size: 18px;
+    font-family: 'Montserrat', serif;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
