@@ -7,12 +7,25 @@ body{
     height: 100vh;
 }
 
+h1, p {
+    font-family: 'Libre Bodoni', serif;
+    color: #354B27;
+}
+
+h1 {
+    width: 90%;
+    font-size: 48px; 
+}
+
+p {
+    font-size: 20px;
+}
+
 .brandName {
     color:#354B27;
     font-size: 32px;
     font-family: 'Libre Bodoni', serif;
 }
-
 
 .myBtn {
     color:#354B27;
@@ -22,10 +35,11 @@ body{
     margin-right: 16px;
 }
 
+
 .cta {
     border: 2px solid #48284A;
-    border-radius: 20px;
-    padding: 8px 40px; 
+    border-radius: 40px;
+    padding: 8px 56px; 
 }
 
 .myBtn:hover{
@@ -36,23 +50,30 @@ body{
 .myMain {
     width: 100%;
     height: 350px;
-    font-family: 'Libre Bodoni', serif;
-    color: #354B27;
     background-image: url(http://localhost:3000/assets/img/librosycafe.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position: center right;
 }
 
-.myMain h1{
-    width: 90%;
-    font-size: 48px;
-}
 
 .myMain p {
     width:60%;
-    padding-top: 8px;
     font-size: 24px;
+    padding-top: 8px;
+}
+
+.myTable {
+    font-family: 'Libre Bodoni', serif;
+    color: #354B27;
+}
+
+.myTable a {
+    color: #354B27;
+}
+
+.myTable a:hover {
+    color: #48284A;
 }
 
 
@@ -61,7 +82,4 @@ footer {
     color: #ECEDEA;
     font-size: 18px;
     font-family: 'Montserrat', serif;
-    position: absolute;
-    bottom:0;
-    left: 0;
 }

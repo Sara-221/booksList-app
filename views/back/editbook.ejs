@@ -1,0 +1,32 @@
+<%- include ('templates/header') %> 
+
+<main class="container text-center pt-4">
+    <h1>
+        Edit a book.
+    </h1>
+    
+    <form action="/admin/editbook" method="POST">
+        <input type="hidden" name="id" id="id" value="<%=book.id%>">
+
+        <input type="text" id="title" name="title" placeholder="Title" class="form-control mb-2" value="<%= book.title %> ">
+
+        <input type="text" id="author" name="author" placeholder="Author" class="form-control mb-2" value="<%= book.author %>">
+
+        <input type="text" id="categories" name="categories" placeholder="Category" value="<%= book.categories %>"" disabled>
+
+        <input type="number" name="publishDate" min="1800" max="2022" id="publishDate" placeholder="Publish Date" class="mb-2" value="<%= book.publishDate %>" disabled>
+
+        <input type="number" name="pages" min="1" max="2000" id="pages" placeholder="Pages" class="mb-2" disabled value="<%= book.pages %>">
+
+        <textarea name="description" id="description" rows="4" class="form-control mb-2" placeholder="Description"><%= book.description %></textarea>
+
+        <div class="d-grid">
+            <button type="submit" class="btn btn-success mb-3">Edit book</button>
+        </div>
+
+    </form>
+    
+</main>
+
+
+<%- include ('templates/footer') %> 

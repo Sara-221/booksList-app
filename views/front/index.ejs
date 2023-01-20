@@ -1,0 +1,20 @@
+<%- include ('./templates/header') %> 
+
+    <main class="container my-5">
+        <article>
+            <h1>You are currently reading</h1>
+            <% books.forEach(({title,author,description}) => { %>
+                <div class="card form-control mb-3">
+                    <img class="card-img-top" src="..." alt="Book img">
+                    <div class="card-body">
+                      <h5 class="card-title"><%= title %> </h5>
+                      <h6 class="card-subtitle mb-2 text-muted"><%= author %> </h6>
+                      <p class="card-text"><%= description %> </p>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-success form-control">Back to list</a>
+            <% }) %>
+        </article>
+    </main>
+
+<%- include ('./templates/footer') %> 
